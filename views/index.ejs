@@ -1,14 +1,41 @@
 <% include ./partials/header.ejs %>
 
+
   <div class="container">
     <div class="jumbotron">
         <h1 class="display-4">Welcome to <%= title %></h1>
         <% if (title == "Home") { %>
           <h1>Thank you for visiting my Portfolio</h1>
+          <br>
 
-          <p></p>
+          <p><b>Mission Statement : </b>My mission is to pursue a career in front-end web development.</p>
+          <br>
+          <a>Click this button to navigate to the About page. </a><a class="btn btn-primary" href="/about" role="button">About Page</a><br><br>
+          <a>Click this button to navigate to the Products page. </a><a class="btn btn-primary" href="/products" role="button">Products Page</a><br><br>
+          <a>Click this button to navigate to the Services page. </a><a class="btn btn-primary" href="/services" role="button">Services Page</a><br><br>
+          <a>Click this button to navigate to the Contact page. </a><a class="btn btn-primary" href="/contact" role="button">Contact Page</a><br><br>
 
         <% } %>
+
+
+        <% if (title == "About") { %>
+          
+
+        <% } %>
+
+
+        <% if (title == "Products") { %>
+          
+
+        <% } %>
+
+
+        <% if (title == "Services") { %>
+          
+
+        <% } %>
+
+
         <% if (title == "Contact") { %>
           <a class="btn btn-primary" href="/contact-list" role="button">Contact List</a>
         <% } %>
