@@ -13,8 +13,8 @@ router.get('/about', function(req, res, next) {
 });
 
 /* GET products page. */
-router.get('/products', function(req, res, next) {
-  res.render('index', { title: 'Products' });
+router.get('/projects', function(req, res, next) {
+  res.render('index', { title: 'Projects' });
 });
 
 /* GET services page. */
