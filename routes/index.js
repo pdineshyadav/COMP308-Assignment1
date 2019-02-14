@@ -27,4 +27,15 @@ router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact' });
 });
 
+/* POST Route for processing the contacts page */
+router.post('/contact', (req, res, next) => {
+
+  // Post data on Console
+  console.log(req.body);
+
+  // Go to Home Page
+  res.redirect('/');
+  
+});
+
 module.exports = router; 

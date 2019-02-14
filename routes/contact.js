@@ -25,4 +25,11 @@ router.get('/', (req, res, next) => {
     });
 });
 
+/* POST Route for processing the contacts page */
+router.post('/index', (req, res, next) => {
+
+    console.log(req.body);
+    
+});
+
 module.exports = router; 
