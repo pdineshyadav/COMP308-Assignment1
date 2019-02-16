@@ -1,9 +1,15 @@
+<!-- File Name :- index.ejs
+    Student Name :- Dinesh Palle
+    Student ID :- 300705307
+    Date :- 16-2-19 -->
+
 <% include ./partials/header.ejs %>
 
 
   <div class="container">
     <div class="jumbotron">
         <h1 class="display-4">Welcome to <%= title %></h1>
+        
         <% if (title == "Home") { %>
           <h1>Thank you for visiting my Portfolio</h1>
           <br>
@@ -17,7 +23,7 @@
 
         <% } %>
 
-
+        
         <% if (title == "About") { %>
 
         <h1>Name :- Dinesh Prasad Palle</h1>
@@ -26,7 +32,8 @@
         <img src="/Assets/images/MyPic.jpg" alt="My Picture" width="300" >
         <br>
         <br>
-        <a href ="/Assets/resume/resume.pdf">Click here for my Resume.</a> 
+        <p><b>Resume :- </b> <a href ="/Assets/resume/resume.pdf">Click here for my Resume.</a></p>
+         
           
 
         <% } %>

@@ -1,3 +1,8 @@
+/* File Name :- contact.js
+    Student Name :- Dinesh Palle
+    Student ID :- 300705307
+    Date :- 16-2-19 */
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -16,7 +21,7 @@ router.get('/', (req, res, next) => {
 
             
             res.render('contacts/index', {
-                title: 'Contact List',
+                title: 'Contact',
                 contactList: contactList
             });
             
